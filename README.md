@@ -1,4 +1,4 @@
-# 🚀 Ethara — Team Task Manager (Full-Stack)
+Ethara — Team Task Manager (Full-Stack)
 
 A full-stack web application where teams can **create projects**, **assign tasks**, and **track progress** with **role-based access control** (Admin / Member).
 
@@ -9,8 +9,7 @@ A full-stack web application where teams can **create projects**, **assign tasks
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 
 ---
-
-## ✨ Key Features
+Key Features
 
 - **Authentication** — Signup & Login with JWT tokens
 - **Role-Based Access Control** — Admin and Member roles
@@ -23,7 +22,7 @@ A full-stack web application where teams can **create projects**, **assign tasks
 
 ---
 
-## 🏗️ Architecture
+Architecture
 
 ```
 ethara/
@@ -40,8 +39,7 @@ ethara/
 ```
 
 ---
-
-## 🛠️ Tech Stack
+Tech Stack
 
 | Layer      | Technology                          |
 |------------|-------------------------------------|
@@ -53,7 +51,7 @@ ethara/
 
 ---
 
-## 🚀 Getting Started (Local)
+Getting Started (Local)
 
 ### Prerequisites
 - Node.js 18+
@@ -96,7 +94,7 @@ Visit **http://localhost:5173** and create an account!
 
 ---
 
-## 🔑 Environment Variables
+Environment Variables
 
 ### Backend (`backend/.env`)
 ```
@@ -154,7 +152,7 @@ FRONTEND_URL=http://localhost:5173
 
 ---
 
-## 🌐 Deployment (Railway)
+Deployment (Railway)
 
 1. Push this repo to GitHub
 2. Go to [railway.app](https://railway.app) and create a new project
