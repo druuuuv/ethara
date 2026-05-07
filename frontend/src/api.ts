@@ -30,7 +30,7 @@ analyticsApi.interceptors.response.use((r) => r, handle401);
 
 // Auth
 export const authAPI = {
-  signup: (data: { name: string; email: string; password: string }) => api.post('/auth/signup', data),
+  signup: (data: { name: string; email: string; password: string; role?: string }) => api.post('/auth/signup', data),
   login: (data: { email: string; password: string }) => api.post('/auth/login', data),
   me: () => api.get('/auth/me'),
 };

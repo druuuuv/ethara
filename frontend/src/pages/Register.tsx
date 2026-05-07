@@ -18,7 +18,7 @@ const Register = () => {
     setError('');
     setLoading(true);
     try {
-      const res = await authAPI.signup({ name, email, password });
+      const res = await authAPI.signup({ name, email, password, role });
       login(res.data.token, res.data.user);
       navigate('/');
     } catch (err: unknown) {
