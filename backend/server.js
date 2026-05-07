@@ -54,10 +54,9 @@ async function initDB() {
   }
 }
 
-app.listen(PORT, () => {
-  console.log(`🚀 Ethara Backend running on port ${PORT}`);
-  initDB().catch((err) => {
-    console.error('⚠️ DB init failed after server start:', err.message);
+initDB().then(() => {
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log(`🚀 Ethara Backend running on port ${PORT}`);
   });
 });
 
