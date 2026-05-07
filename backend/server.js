@@ -48,8 +48,7 @@ async function initDB() {
   try {
     const schema = fs.readFileSync(path.join(__dirname, 'db', 'schema.sql'), 'utf8');
     await pool.query(schema);
-    await pool.query("UPDATE users SET role='admin'");
-    console.log('✅ Database tables ready and all users forced to admin');
+    console.log('✅ Database tables ready');
   } catch (err) {
     console.error('⚠️ DB init warning:', err.message);
   }
